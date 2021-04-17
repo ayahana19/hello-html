@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Routerサンプル</title>
+    <link href="hello.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="hello.js"></script>
+
+
+    <style>
+    </style>
+</head>
+
+<body style="background-color:pink;">
+    <div id="app">
+        <!-- この部分に必要なHTML要素を記述していく
+        開発者コンソール画面から、app.message = 'First Application!'の形式で、好きなメッセージにその場で変更できる
+
+            -->
+        <h1>{{ message }}</h1>
+    </div>
+
+    <div id="app_1">
+        <p class="MyClass01">{{message_1.value}}</p>
+        <p class="MyClass02">このメッセージは{{message_1.value.length}}文字数です</p>
+        <p class="MyClass03">{{list[2]}}</p>
+        <p class="MyClass04">{{list[num]}}</p>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '『基礎から学ぶvue.js』'
+            }
+        })
+
+
+
+
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script type="text/javascript" src="hello.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿/* <transition>タグで囲んだ要素に対して、以下のようにCSSを定義する
+            opacityプロパティは、要素の透明度を指定する際に使用 */
+          
+
+          .v-enter-active, .v-leave-active{
+            transition: opacity 1s;
+
+          }
+          /* opacity:0から1へのフェードイン＆フェードアウト*/
+          .v-enter, .v-leave-to {
+            opacity:0;
+          }
+
+          /*  h1.MyClass01 の記述によりH1タグでクラス名が"MyClass01"である要素のスタイルを設定します*/
+          h1 { font-size: 1.2em; color:hotpink;}
+          h2 { font-size: 0.9em; } /*h2見出しの大きさを1.125emに*/
+
+         .app_1{ font-size: 0.5em; color:white; }
+ 
+ 		/*  h1.MyClass01 の記述によりH1タグでクラス名が"MyClass01"である要素のスタイルを設定します*/
+          .MyClass01 {color:snow; font-size: 0.9em;font-weight:bold; } /*Hタグ文字の太さ変更*/ 
+          .MyClass02 {color:yellow; font-size: 0.9em;font-weight:bold; } 
+          .MyClass03 {color:red; font-size: 0.9em;font-weight:bold; } /*Hタグ文字の太さ変更*/ 
+          .MyClass04 {color:lime; font-size: 0.9em;font-weight:bold; } 
+          /* p {color:skyblue; font-size: 0.9em;font-weight:bold;} */
+          /*p（パラグラフ）段落の文字の大きさを0.75emに 
+
+
+
+
+          emはエムと読み、相対的なフォントサイズを指定できます。
+　　　　　標準では、1em が16px（ピクセル）に相当します。
+　　　　  1.125emは16×1.125で18px（ピクセル）、0.75emは16×0.75で12pxになります。 */
+
+
+       
